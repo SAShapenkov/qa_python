@@ -73,7 +73,7 @@ class TestBooksCollector:
         books_collection.set_book_genre('Синий трактор', 'Мультфильмы')
         assert len(books_collection.get_books_for_children()) == 1
 
-    def test_add_book_in_favorites(self):  # 8 добавить книгу в Избранное
+    def test_add_book_in_favorites_and_get_list_of_favorites_books(self):  # 8 добавить книгу в Избранное и получить список Избранных книг
         book_favorites = BooksCollector()
         book_favorites.add_new_book('451 градус по Фаренгейту')
         book_favorites.add_book_in_favorites('451 градус по Фаренгейту')
