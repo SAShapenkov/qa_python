@@ -87,9 +87,3 @@ class TestBooksCollector:
         book_favorites.add_book_in_favorites('Лабиринт отражений')
         book_favorites.delete_book_from_favorites('451 градус по Фаренгейту')
         assert book_favorites.get_list_of_favorites_books() == ['Лабиринт отражений']
-
-   # def test_get_list_of_favorites_books_true(self):  # 10 получить список Избранных книг
-    #    book_favorites = BooksCollector()
-     #   book_favorites.add_new_book('451 градус по Фаренгейту')
-     #   book_favorites.add_book_in_favorites('451 градус по Фаренгейту')
-     #   assert book_favorites.get_list_of_favorites_books() == ['451 градус по Фаренгейту']
